@@ -7,7 +7,7 @@ pca = PCA(n_components=2)
 tfit = pca.fit_transform(f['data'])
 
 fig, ax = plt.subplots(1)
-col = ['r', 'y', 'b']
+col = ['r', 'limegreen', 'b']
 colors = [col[f['target'][i]] for i in range(len(f['data']))]
-plt.scatter(tfit[:, 0], tfit[:, 1], c=colors)
+plt.scatter(tfit[:, 0], tfit[:, 1], c=colors, s=60)
 plt.show()
