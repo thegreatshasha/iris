@@ -12,5 +12,5 @@ ax = fig.add_subplot(111, projection='3d')
 col = ['r', 'limegreen', 'b']
 colors = [col[f['target'][i]] for i in range(len(f['data']))]
 
-plt.scatter(tfit[:, 0], tfit[:, 1], tfit[:, 2], c=colors, s=60, marker='o')
+plt.scatter(tfit[:, 0], tfit[:, 1], s=60, c=colors, zs=tfit[:, 2])
 plt.show()
